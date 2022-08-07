@@ -1,0 +1,50 @@
+{
+  "clients": [
+    {
+      "id": 0,
+      "name": "John",
+      "surname": "Smith",
+      "active": true
+    },
+    {
+      "id": 1,
+      "name": "Mary",
+      "surname": "Rose",
+      "active": false
+    },
+    {
+      "id": 2,
+      "name": "Johanna",
+      "surname": "Bridge",
+      "active": false
+    }
+  ],
+  "doctors": [
+    {
+      "id": 3,
+      "name": "Ben",
+      "surname": "Walles",
+      "available": true
+    },
+    {
+      "id": 4,
+      "name": "Karen",
+      "surname": "Fly",
+      "available": false
+    },
+    {
+      "id": 5,
+      "name": "Kim",
+      "surname": "Valter",
+      "available": false
+    }
+  ],
+  "appointments": [
+    {
+      "name": "Sara",
+      "surname": "Konor",
+      "ready": true,
+      "id": 1
+    }
+  ]
+}
