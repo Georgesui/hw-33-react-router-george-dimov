@@ -18,6 +18,7 @@ function Appointments() {
 
 	return(
 		<>
+		<h1 className="appointments_heading">You may add your details in order to cooperate with our management</h1>
 	<AppointmentForm onSubmit={addAppointmentToTheList}></AppointmentForm>
 	<AppointmentsList appointments={appointments}></AppointmentsList>
 		</>

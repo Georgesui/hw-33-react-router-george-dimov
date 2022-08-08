@@ -26,6 +26,7 @@ async function deleteClient(id) {
 
 	return(
 		<>
+		<h1>Please add your details in order to visit a doctor. If color is green - you may come in to the doctor's office. Yellow - you should wait for some time</h1>
 		<ClientForm onSubmit={addClientToTheList}></ClientForm>
 		<ClientsList clients={clients} onDelete={deleteClient} onChangeStatus={updateStatusOfClient}></ClientsList>
 		</>

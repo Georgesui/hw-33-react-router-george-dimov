@@ -1,11 +1,11 @@
 import { Button } from '@mui/material';
+import ListItem from '@mui/material/ListItem';
 
-function AppointmentsPlanning ({appointments, onChangeStatus}) {
+function AppointmentsPlanning ({appointments}) {
 
-	return (<li className={[appointments.ready ? 'statusTrue' : 'statusFalse', 'clientElement'].join(' ')}>
+	return (<ListItem className={[appointments.ready ? 'statusTrue' : 'statusFalse', 'clientElement'].join(' ')}>
 	{appointments.name} {appointments.surname} <div className='row'>
-		< Button variant="contained" size="small" color="success" className='buttonToChangeStatus' onClick={() => onChangeStatus(appointments.id)}>changeStatus</Button>
-		</div></li>)
+		</div></ListItem>)
 }
 
 export default AppointmentsPlanning

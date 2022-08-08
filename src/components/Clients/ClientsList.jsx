@@ -1,8 +1,9 @@
 import ClientsPersons from './ClientsPersons'
+import List from '@mui/material/List';
 
 function ClientsList ({clients, onDelete,onChangeStatus}) {
 	return (
-		<ul className='list'>
+		<List className='list'>
 				{
 					clients.map((client) => {
 						return <ClientsPersons  
@@ -12,7 +13,7 @@ function ClientsList ({clients, onDelete,onChangeStatus}) {
 						onChangeStatus ={onChangeStatus}></ClientsPersons>
 					})
 				}
-			</ul >
+			</List >
 	)
 }
 

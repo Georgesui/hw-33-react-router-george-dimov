@@ -48,3 +48,21 @@
 .mens-health {
 	margin: 0 20px;
 }
+
+#outlined-basic {
+	display: inline-block;
+	padding: 10.5px 10px;
+	margin-right: 10px;
+}
+
+.MuiFormControl-root.MuiTextField-root {
+	margin-right: 10px;
+}
+
+.MuiButton-containedSizeSmall.buttonForDelete {
+	margin-right: 5px;
+}
+
+.MuiBox-root.css-0 {
+	display: flex;
+}

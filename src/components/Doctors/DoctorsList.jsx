@@ -1,8 +1,9 @@
 import DoctorsItems from './DoctorsItems'
+import List from '@mui/material/List';
 
 function DoctorsList ({doctors, onChangeStatus}) {
 	return (
-		<ul className='list'>
+		<List className='list'>
 				{
 					doctors.map((doctor) => {
 						return <DoctorsItems  
@@ -11,7 +12,7 @@ function DoctorsList ({doctors, onChangeStatus}) {
 						onChangeStatus ={onChangeStatus}></DoctorsItems>
 					})
 				}
-			</ul >
+			</List >
 	)
 }
 

@@ -1,5 +1,8 @@
 import { useState } from "react"
 import { Button } from '@mui/material';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+
 
 export default function AppointmentForm({onSubmit}) {
 	const [appointment, setAppointment] = useState({
@@ -26,9 +29,9 @@ export default function AppointmentForm({onSubmit}) {
 	}
 
 	return (
-	<form onSubmit={submitForm}>
-		<input type="text" name="name" value={appointment.name} onChange={changeAppointment}/>
-		<input type="text" name="surname" value={appointment.surname} onChange={changeAppointment}/>
+	<Box component="form" onSubmit={submitForm}>
+		<TextField id="outlined-basic" label="Outlined" variant="outlined" type="text" name="name" value={appointment.name} onChange={changeAppointment}/>
+		<TextField id="outlined-basic" label="Outlined" variant="outlined" type="text" name="surname" value={appointment.surname} onChange={changeAppointment}/>
 		<Button variant="outlined" size="small" className='buttonToAdd'>Add Todo</Button>
-	</form>)
+	</Box>)
 }

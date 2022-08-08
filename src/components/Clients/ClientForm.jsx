@@ -31,7 +31,7 @@ function ClientForm ({onSubmit}) {
 	<Box component="form" onSubmit={submitForm}>
 		<TextField id="outlined-basic" label="Outlined" variant="outlined" type="text" name="name" value={client.name} onChange={changeTodo}/>
 		<TextField id="outlined-basic" label="Outlined" variant="outlined" type="text" name="surname" value={client.surname} onChange={changeTodo}/>
-		<Button size="small" variant="contained" className='buttonToAdd'>Add Todo</Button>
+		<Button size="large" variant="contained" className='buttonToAdd'>Add Todo</Button>
 	</Box>)
 }
 

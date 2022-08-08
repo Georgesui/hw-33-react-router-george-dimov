@@ -17,6 +17,7 @@ async function updateStatusOfDoctor(id) {
 
 	return(
 		<>
+		<h1>You may find below list of our Doctors. Green color - the doctor is available today, yellow - not.</h1>
 		<DoctorsList doctors={doctors} onChangeStatus={updateStatusOfDoctor}></DoctorsList>
 		</>
 	)
